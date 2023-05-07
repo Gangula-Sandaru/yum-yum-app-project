@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recipt List"
+        android:textSize="24sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        android:gravity="center" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutBannerList"
+        android:layout_below="@id/banner"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/addBTN"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@drawable/add"
+            android:background="@color/transparent"
+            app:tint="@color/black"
+            />
+        <EditText
+            android:id="@+id/EditTextTitle"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:hint="Recipes title"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:background="@drawable/edit_round_boarder"
+            />
+        <EditText
+            android:id="@+id/EditTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Recipes Description"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:background="@drawable/edit_round_boarder"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutBannerList"
+        tools:listitem="@layout/recepit_list" />
+
+</RelativeLayout>
+
+

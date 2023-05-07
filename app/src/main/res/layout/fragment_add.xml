@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".fragment.AddFragment">
+
+    <TextView
+        android:id="@+id/bannerhome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Yum Yum App"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:src="@drawable/red_rem"
+        android:layout_marginLeft="16dp"
+        />
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/bannerhome"
+        android:src="@drawable/otp"/>
+
+    <TextView
+        android:id="@+id/userId"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/bannerhome"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="246dp"
+        android:text="Profile Name"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/userId"
+        android:layout_toEndOf="@id/profilePic"
+        android:text="UserName"
+        android:textColor="@color/black" />
+
+
+
+
+    <EditText
+        android:id="@+id/postTxt"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/profilePic"
+        android:layout_marginBottom="10dp"
+        android:hint="Write Something to post ..........."
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hintColor" />
+
+    <Button
+        android:id="@+id/op_btn"
+        android:layout_width="82dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/postPic"
+        android:layout_alignEnd="@+id/userId"
+        android:layout_marginStart="265dp"
+        android:layout_marginEnd="-226dp"
+        android:layout_marginBottom="78dp"
+        android:layout_toEndOf="@+id/profilePic"
+        android:text="Post"
+        app:tint="@color/black" />
+
+
+    <ImageView
+        android:id="@+id/postPic"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/postTxt" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/postPic"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/picPicker"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/pic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/image"
+                app:tint="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/picTEXT"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Picture/Video"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/picTag"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/tag"
+                app:tint="@color/black"
+                />
+            <TextView
+                android:id="@+id/picTagTEXT"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Tag Friends"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:gravity="center_vertical"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/picFeel"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/emo"
+                app:tint="@color/black"
+                />
+            <TextView
+                android:id="@+id/picFeelTEXT"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Feeling / Sticker"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/camLayOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/picCam"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/cam"
+                app:tint="@color/black"
+                />
+
+
+            <TextView
+                android:id="@+id/picTCamEXT"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Camera"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:gravity="center_vertical"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".OTPScreen">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/otp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter code that we have sent you?"
+        android:gravity="center"
+        android:textColor="#66000000"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:textColor="#66000000"
+        android:layout_gravity="center"
+        android:textSize="12dp"
+        android:layout_marginTop="10dp"
+
+        />
+    <TextView
+        android:id="@+id/otpEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text@gmail.com"
+        android:textStyle="bold"
+        android:textColor="#CC000000"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number"
+        android:textColor="#66000000"
+        android:layout_gravity="center"
+        android:textSize="12dp"
+        android:layout_marginTop="10dp"
+
+        />
+    <TextView
+        android:id="@+id/otpMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+94766526217"
+        android:textStyle="bold"
+        android:textColor="#CC000000"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center">
+
+    <EditText
+        android:id="@+id/OPTB1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/round_black_dark_blue"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/OPTB2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/round_black_dark_blue"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/OPTB3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/round_black_dark_blue"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/OPTB4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/round_black_dark_blue"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+        </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/verifyBTN"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_back_primary"
+        android:text="verify"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't receive OTP?"
+            android:textColor="@color/hintColor"
+            />
+
+        <TextView
+            android:id="@+id/resentBtn"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend code"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

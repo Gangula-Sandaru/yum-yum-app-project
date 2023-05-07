@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "519479330916",
+    "project_id": "yum-yum-app-41ebb",
+    "storage_bucket": "yum-yum-app-41ebb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519479330916:android:97aa2271cef80aeed5f771",
+        "android_client_info": {
+          "package_name": "com.gangula.yumyumapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "519479330916-2ilfvqk6liorlf33eipuvkr4uu99i6ta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtuex5fP1vX9XzMy5qxx3VYOHURloomEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "519479330916-2ilfvqk6liorlf33eipuvkr4uu99i6ta.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="525dp">
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/propic" />
+
+    <TextView
+        android:id="@+id/userId"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_toEndOf="@id/profilePic"
+        android:text="Profile Name"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/userId"
+        android:layout_toEndOf="@id/profilePic"
+        android:text="UserName"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/postTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/profilePic"
+        android:paddingLeft="10dp"
+        android:text="Post content"
+        android:textColor="@color/black" />
+    <ImageButton
+        android:id="@+id/op_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/userId"
+
+        android:layout_marginStart="281dp"
+        android:layout_marginEnd="-215dp"
+        android:layout_toEndOf="@+id/profilePic"
+        android:background="@color/transparent"
+        android:src="@drawable/dot"
+        app:tint="@color/black" />
+
+    <ImageView
+        android:id="@+id/postPic"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/postTxt"
+        android:src="@drawable/otp" />
+
+
+    <ImageButton
+        android:id="@+id/like_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/postPic"
+        android:layout_marginBottom="-48dp"
+        android:background="@color/transparent"
+        android:src="@drawable/like"
+        app:tint="@color/black" />
+
+    <ImageButton
+        android:id="@+id/comment_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/postPic"
+        android:layout_marginBottom="-48dp"
+        android:background="@color/transparent"
+        android:src="@drawable/comment"
+        android:layout_toEndOf="@id/like_btn"
+        app:tint="@color/black" />
+    <ImageButton
+        android:id="@+id/share_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/postPic"
+        android:layout_marginBottom="-48dp"
+        android:background="@color/transparent"
+        android:layout_toEndOf="@id/comment_btn"
+        android:src="@drawable/share"
+        app:tint="@color/black" />
+
+    <ImageButton
+        android:id="@+id/fav_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/postPic"
+        android:layout_marginStart="211dp"
+        android:layout_marginBottom="-50dp"
+        android:layout_toEndOf="@id/share_btn"
+        android:background="@color/transparent"
+        android:src="@drawable/fav"
+        app:tint="@color/black" />
+</RelativeLayout>
