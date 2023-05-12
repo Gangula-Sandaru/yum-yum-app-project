@@ -12,4 +12,4 @@ This repo has
 * SRS Document
 * APK file
 
-Please copy this code to your android studio, then you can 
+Please copy this code to your android studio, then you can run this project without no issue.
