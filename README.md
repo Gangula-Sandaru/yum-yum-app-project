@@ -9,3 +9,4 @@ This repo include all the project files as well as Use case, ER, and Project pro
 This repo has 
 * Use Case
 * ER Diagram
+* Project proposal
