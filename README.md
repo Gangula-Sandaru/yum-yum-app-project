@@ -11,3 +11,5 @@ This repo has
 * Project proposal
 * SRS Document
 * APK file
+
+Please copy this code to your android studio.
