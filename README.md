@@ -10,3 +10,4 @@ This repo has
 * Use Case
 * ER Diagram
 * Project proposal
+* SRS Document
